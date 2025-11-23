@@ -14,6 +14,7 @@
         android:paddingRight="16dp">
 
         <com.google.android.material.card.MaterialCardView
+            android:id="@+id/calculator_card"
             style="@style/DashboardCard"
             android:layout_marginEnd="8dp">
 
@@ -38,7 +39,9 @@
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
-        <com.google.android.material.card.MaterialCardView style="@style/DashboardCard">
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/form_card"
+            style="@style/DashboardCard">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -72,6 +75,7 @@
         android:paddingRight="16dp">
 
         <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cashier_card"
             style="@style/DashboardCard"
             android:layout_marginEnd="8dp">
 
@@ -96,7 +100,9 @@
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
-        <com.google.android.material.card.MaterialCardView style="@style/DashboardCard">
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/temp_card"
+            style="@style/DashboardCard">
 
             <LinearLayout
                 android:layout_width="match_parent"
