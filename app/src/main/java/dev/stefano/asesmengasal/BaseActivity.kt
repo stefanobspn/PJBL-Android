@@ -16,13 +16,15 @@ open class BaseActivity: AppCompatActivity() {
     protected lateinit var titleTextView: TextView
     private lateinit var drawer: DrawerLayout
     protected var currentNavId: Int = R.id.nav_dashboard
+    protected lateinit var profileButton : ImageButton
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_base)
         enableEdgeToEdge()
 
         val menuButton = findViewById<ImageButton>(R.id.menu_btn)
-        val profileButton = findViewById<ImageButton>(R.id.profile_btn)
+        profileButton = findViewById<ImageButton>(R.id.profile_btn)
         drawer = findViewById(R.id.drawerLayout)
         navigationView = findViewById(R.id.navigationView)
         titleTextView = findViewById(R.id.title_tv)

@@ -8,6 +8,7 @@ class ProfileActivity: BaseActivity() {
         setChildContent(R.layout.activity_profile)
 
         currentNavId = R.id.profile_btn
+        profileButton.isSelected = true
         setToolbarTitle("Profile")
 
     }

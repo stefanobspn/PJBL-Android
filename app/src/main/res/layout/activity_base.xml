@@ -40,7 +40,7 @@
                     android:id="@+id/profile_btn"
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="?selectableItemBackgroundBorderless"
+                    android:background="@drawable/profile_btn_background"
                     android:contentDescription="Profile"
                     android:src="@drawable/ic_profile"/>
 
