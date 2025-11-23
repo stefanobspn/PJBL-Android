@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">PJBL</string>
+    <string-array name="religions">
+        <item>Islam</item>
+        <item>Kristen</item>
+        <item>Katolik</item>
+        <item>Hindu</item>
+        <item>Buddha</item>
+        <item>Konghucu</item>
+    </string-array>
 </resources>
