@@ -24,7 +24,8 @@
                     android:layout_height="64dp"
                     android:background="?selectableItemBackgroundBorderless"
                     android:contentDescription="Menu"
-                    android:src="@drawable/ic_menu"/>
+                    android:src="@drawable/ic_menu"
+                    app:tint="@color/dashboard_text_color"/>
 
                 <TextView
                     android:id="@+id/title_tv"
@@ -42,7 +43,8 @@
                     android:layout_height="64dp"
                     android:background="@drawable/profile_btn_background"
                     android:contentDescription="Profile"
-                    android:src="@drawable/ic_profile"/>
+                    android:src="@drawable/ic_profile"
+                    app:tint="@color/dashboard_text_color"/>
 
             </LinearLayout>
         <FrameLayout
