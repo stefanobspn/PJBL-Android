@@ -7,6 +7,7 @@ class FormActivity: BaseActivity() {
         super.onCreate(savedInstanceState)
         setChildContent(R.layout.activity_form)
 
+        currentNavId = R.id.nav_form
         navigationView.setCheckedItem(R.id.nav_form)
         setToolbarTitle("Formulir")
     }

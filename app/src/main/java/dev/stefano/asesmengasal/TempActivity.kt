@@ -7,6 +7,7 @@ class TempActivity: BaseActivity() {
         super.onCreate(savedInstanceState)
         setChildContent(R.layout.activity_temp)
 
+        currentNavId = R.id.nav_temp
         navigationView.setCheckedItem(R.id.nav_temp)
         setToolbarTitle("Konversi Suhu")
     }

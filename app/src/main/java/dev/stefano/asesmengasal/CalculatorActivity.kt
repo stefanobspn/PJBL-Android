@@ -7,6 +7,7 @@ class CalculatorActivity: BaseActivity() {
         super.onCreate(savedInstanceState)
         setChildContent(R.layout.activity_calculator)
 
+        currentNavId = R.id.nav_calculator
         navigationView.setCheckedItem(R.id.nav_calculator)
         setToolbarTitle("Kalkulator")
     }

@@ -10,6 +10,7 @@ class DashboardActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setChildContent(R.layout.activity_dashboard)
 
+        currentNavId = R.id.nav_dashboard
         navigationView.setCheckedItem(R.id.nav_dashboard)
         setToolbarTitle("Dashboard")
     }

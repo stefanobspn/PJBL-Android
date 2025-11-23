@@ -7,6 +7,7 @@ class CashierActivity: BaseActivity() {
         super.onCreate(savedInstanceState)
         setChildContent(R.layout.activity_cashier)
 
+        currentNavId = R.id.nav_cashier
         navigationView.setCheckedItem(R.id.nav_cashier)
         setToolbarTitle("Kasir")
     }
