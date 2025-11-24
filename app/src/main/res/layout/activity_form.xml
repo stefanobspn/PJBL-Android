@@ -39,7 +39,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="text"
-                        android:textColor="@color/dashboard_text_color"/>
+                        android:textColor="@color/dashboard_text_color" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -56,7 +56,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="number"
-                        android:textColor="@color/dashboard_text_color"/>
+                        android:textColor="@color/dashboard_text_color" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -79,7 +79,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Laki-laki"
-                        android:textColor="@color/dashboard_text_color"/>
+                        android:textColor="@color/dashboard_text_color" />
 
                     <RadioButton
                         android:id="@+id/female_radio_button"
@@ -87,7 +87,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
                         android:text="Perempuan"
-                        android:textColor="@color/dashboard_text_color"/>
+                        android:textColor="@color/dashboard_text_color" />
                 </RadioGroup>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -103,7 +103,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="textEmailAddress"
-                        android:textColor="@color/dashboard_text_color"/>
+                        android:textColor="@color/dashboard_text_color" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -120,7 +120,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="none"
-                        android:textColor="@color/dashboard_text_color"/>
+                        android:textColor="@color/dashboard_text_color" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -137,7 +137,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="none"
-                        android:textColor="@color/dashboard_text_color"/>
+                        android:textColor="@color/dashboard_text_color" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -156,7 +156,7 @@
                         android:gravity="top"
                         android:inputType="textMultiLine"
                         android:minLines="3"
-                        android:textColor="@color/dashboard_text_color"/>
+                        android:textColor="@color/dashboard_text_color" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -169,14 +169,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:padding="12dp"
             android:text="Submit"
-            android:textColor="@color/white"
-            android:padding="12dp"/>
+            android:textColor="@color/white" />
 
         <Space
             android:id="@+id/keyboard_space"
             android:layout_width="match_parent"
-            android:layout_height="0dp"/>
+            android:layout_height="0dp" />
 
     </LinearLayout>
 </ScrollView>

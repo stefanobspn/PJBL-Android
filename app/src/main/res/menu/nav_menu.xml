@@ -4,22 +4,22 @@
         <item
             android:id="@+id/nav_dashboard"
             android:icon="@drawable/ic_dashboard"
-            android:title="Dashboard"/>
+            android:title="Dashboard" />
         <item
             android:id="@+id/nav_calculator"
             android:icon="@drawable/ic_calculator"
-            android:title="Kalkulator"/>
+            android:title="Kalkulator" />
         <item
             android:id="@+id/nav_form"
             android:icon="@drawable/ic_form"
-            android:title="Formulir"/>
+            android:title="Formulir" />
         <item
             android:id="@+id/nav_cashier"
             android:icon="@drawable/ic_cashier"
-            android:title="Kasir"/>
+            android:title="Kasir" />
         <item
             android:id="@+id/nav_temp"
             android:icon="@drawable/ic_temp"
-            android:title="Konversi Suhu"/>
+            android:title="Konversi Suhu" />
     </group>
 </menu>

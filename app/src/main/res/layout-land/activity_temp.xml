@@ -17,9 +17,9 @@
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/dashboard_card_color"
             app:cardCornerRadius="16dp"
             app:cardElevation="4dp"
-            app:cardBackgroundColor="@color/dashboard_card_color"
             app:strokeColor="#3E3E4A"
             app:strokeWidth="1dp">
 
@@ -32,10 +32,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
                     android:text="Masukkan Suhu"
-                    android:textSize="18sp"
                     android:textColor="@color/dashboard_text_color"
-                    android:fontFamily="@font/poppins" />
+                    android:textSize="18sp" />
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/temp_input_layout"
@@ -50,7 +50,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="numberDecimal|numberSigned"
-                        android:textColor="@color/dashboard_text_color"/>
+                        android:textColor="@color/dashboard_text_color" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -67,7 +67,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="none"
-                        android:textColor="@color/dashboard_text_color"/>
+                        android:textColor="@color/dashboard_text_color" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -80,9 +80,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/dashboard_card_color"
             app:cardCornerRadius="16dp"
             app:cardElevation="4dp"
-            app:cardBackgroundColor="@color/dashboard_card_color"
             app:strokeColor="#3E3E4A"
             app:strokeWidth="1dp">
 
@@ -95,10 +95,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
                     android:text="Hasil Konversi"
-                    android:textSize="18sp"
                     android:textColor="@color/dashboard_text_color"
-                    android:fontFamily="@font/poppins" />
+                    android:textSize="18sp" />
 
                 <!-- Celsius Output -->
                 <LinearLayout
@@ -111,8 +111,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Celcius"
-                        android:textSize="16sp"
-                        android:textColor="@color/dashboard_text_color"/>
+                        android:textColor="@color/dashboard_text_color"
+                        android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/celsius_output_tv"
@@ -120,9 +120,9 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text=" -"
-                        android:textSize="16sp"
                         android:textAlignment="textEnd"
-                        android:textColor="@color/dashboard_text_color"/>
+                        android:textColor="@color/dashboard_text_color"
+                        android:textSize="16sp" />
                 </LinearLayout>
 
                 <!-- Fahrenheit Output -->
@@ -136,8 +136,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Fahrenheit"
-                        android:textSize="16sp"
-                        android:textColor="@color/dashboard_text_color"/>
+                        android:textColor="@color/dashboard_text_color"
+                        android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/fahrenheit_output_tv"
@@ -145,9 +145,9 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text=" -"
-                        android:textSize="16sp"
                         android:textAlignment="textEnd"
-                        android:textColor="@color/dashboard_text_color"/>
+                        android:textColor="@color/dashboard_text_color"
+                        android:textSize="16sp" />
                 </LinearLayout>
 
                 <!-- Kelvin Output -->
@@ -161,8 +161,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Kelvin"
-                        android:textSize="16sp"
-                        android:textColor="@color/dashboard_text_color"/>
+                        android:textColor="@color/dashboard_text_color"
+                        android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/kelvin_output_tv"
@@ -170,9 +170,9 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text=" -"
-                        android:textSize="16sp"
                         android:textAlignment="textEnd"
-                        android:textColor="@color/dashboard_text_color"/>
+                        android:textColor="@color/dashboard_text_color"
+                        android:textSize="16sp" />
                 </LinearLayout>
 
                 <!-- Reamur Output -->
@@ -186,8 +186,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Reamur"
-                        android:textSize="16sp"
-                        android:textColor="@color/dashboard_text_color"/>
+                        android:textColor="@color/dashboard_text_color"
+                        android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/reamur_output_tv"
@@ -195,9 +195,9 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text=" -"
-                        android:textSize="16sp"
                         android:textAlignment="textEnd"
-                        android:textColor="@color/dashboard_text_color"/>
+                        android:textColor="@color/dashboard_text_color"
+                        android:textSize="16sp" />
                 </LinearLayout>
 
             </LinearLayout>

@@ -83,7 +83,8 @@ class CashierActivity : BaseActivity() {
             for (item in items) {
                 val itemView = inflater.inflate(R.layout.cashier_item_row, itemsContainer, false)
                 val itemNameTextView = itemView.findViewById<TextView>(R.id.item_name_textview)
-                val itemQuantityTextView = itemView.findViewById<TextView>(R.id.item_quantity_textview)
+                val itemQuantityTextView =
+                    itemView.findViewById<TextView>(R.id.item_quantity_textview)
                 val itemPriceTextView = itemView.findViewById<TextView>(R.id.item_price_textview)
 
                 itemNameTextView.text = item.first

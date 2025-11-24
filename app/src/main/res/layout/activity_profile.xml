@@ -13,46 +13,46 @@
         android:padding="16dp">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:visibility="gone"
             android:id="@+id/profile_image"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:src="@drawable/ic_profile"
-            app:civ_border_width="1dp"
-            app:civ_border_color="@color/dashboard_text_color"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="16dp"
-            android:contentDescription="Profile Picture" />
+            android:contentDescription="Profile Picture"
+            android:src="@drawable/ic_profile"
+            android:visibility="gone"
+            app:civ_border_color="@color/dashboard_text_color"
+            app:civ_border_width="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/no_profile_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
             android:text="Anda belum pernah menambahkan profile"
-            android:textSize="18sp"
-            android:textColor="@color/dashboard_text_color"
-            android:visibility="gone"
             android:textAlignment="center"
-            app:layout_constraintTop_toBottomOf="@id/profile_image"
-            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/dashboard_text_color"
+            android:textSize="18sp"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="24dp" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_image" />
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/profile_card"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
+            android:visibility="gone"
             app:cardCornerRadius="16dp"
             app:cardElevation="4dp"
-            app:strokeColor="#3E3E4A"
-            app:strokeWidth="1dp"
-            android:visibility="gone"
-            app:layout_constraintTop_toBottomOf="@id/profile_image"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
+            app:layout_constraintTop_toBottomOf="@id/profile_image"
+            app:strokeColor="#3E3E4A"
+            app:strokeWidth="1dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -65,111 +65,118 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Nama"
-                    android:textSize="12sp"
-                    android:textColor="@color/dashboard_text_color" />
+                    android:textColor="@color/dashboard_text_color"
+                    android:textSize="12sp" />
+
                 <TextView
                     android:id="@+id/name_text_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="User Name"
-                    android:textSize="18sp"
+                    android:layout_marginBottom="12dp"
                     android:textColor="@color/dashboard_text_color"
-                    android:layout_marginBottom="12dp"/>
+                    android:textSize="18sp"
+                    tools:text="User Name" />
 
                 <!-- Age -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Umur"
-                    android:textSize="12sp"
-                    android:textColor="@color/dashboard_text_color" />
+                    android:textColor="@color/dashboard_text_color"
+                    android:textSize="12sp" />
+
                 <TextView
                     android:id="@+id/age_text_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="20"
-                    android:textSize="18sp"
+                    android:layout_marginBottom="12dp"
                     android:textColor="@color/dashboard_text_color"
-                    android:layout_marginBottom="12dp"/>
+                    android:textSize="18sp"
+                    tools:text="20" />
 
                 <!-- Gender -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Jenis Kelamin"
-                    android:textSize="12sp"
-                    android:textColor="@color/dashboard_text_color" />
+                    android:textColor="@color/dashboard_text_color"
+                    android:textSize="12sp" />
+
                 <TextView
                     android:id="@+id/gender_text_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="Laki-laki"
-                    android:textSize="18sp"
+                    android:layout_marginBottom="12dp"
                     android:textColor="@color/dashboard_text_color"
-                    android:layout_marginBottom="12dp"/>
+                    android:textSize="18sp"
+                    tools:text="Laki-laki" />
 
                 <!-- Email -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Email"
-                    android:textSize="12sp"
-                    android:textColor="@color/dashboard_text_color" />
+                    android:textColor="@color/dashboard_text_color"
+                    android:textSize="12sp" />
+
                 <TextView
                     android:id="@+id/email_text_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="user@example.com"
-                    android:textSize="18sp"
+                    android:layout_marginBottom="12dp"
                     android:textColor="@color/dashboard_text_color"
-                    android:layout_marginBottom="12dp"/>
+                    android:textSize="18sp"
+                    tools:text="user@example.com" />
 
                 <!-- Religion -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Agama"
-                    android:textSize="12sp"
-                    android:textColor="@color/dashboard_text_color" />
+                    android:textColor="@color/dashboard_text_color"
+                    android:textSize="12sp" />
+
                 <TextView
                     android:id="@+id/religion_text_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="Islam"
-                    android:textSize="18sp"
+                    android:layout_marginBottom="12dp"
                     android:textColor="@color/dashboard_text_color"
-                    android:layout_marginBottom="12dp"/>
+                    android:textSize="18sp"
+                    tools:text="Islam" />
 
                 <!-- Hobby -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Hobi"
-                    android:textSize="12sp"
-                    android:textColor="@color/dashboard_text_color" />
+                    android:textColor="@color/dashboard_text_color"
+                    android:textSize="12sp" />
+
                 <TextView
                     android:id="@+id/hobby_text_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="Membaca"
-                    android:textSize="18sp"
+                    android:layout_marginBottom="12dp"
                     android:textColor="@color/dashboard_text_color"
-                    android:layout_marginBottom="12dp"/>
+                    android:textSize="18sp"
+                    tools:text="Membaca" />
 
                 <!-- Address -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Alamat"
-                    android:textSize="12sp"
-                    android:textColor="@color/dashboard_text_color" />
+                    android:textColor="@color/dashboard_text_color"
+                    android:textSize="12sp" />
+
                 <TextView
                     android:id="@+id/address_text_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="Jalan Kenangan No. 10"
+                    android:textColor="@color/dashboard_text_color"
                     android:textSize="18sp"
-                    android:textColor="@color/dashboard_text_color"/>
+                    tools:text="Jalan Kenangan No. 10" />
 
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
@@ -181,11 +188,11 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
+            android:padding="12dp"
             android:text="Edit Profile"
-            app:layout_constraintTop_toBottomOf="@id/no_profile_text"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:padding="12dp"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/no_profile_text" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

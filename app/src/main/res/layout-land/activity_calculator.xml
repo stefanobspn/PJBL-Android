@@ -17,9 +17,9 @@
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/dashboard_card_color"
             app:cardCornerRadius="16dp"
             app:cardElevation="4dp"
-            app:cardBackgroundColor="@color/dashboard_card_color"
             app:strokeColor="#3E3E4A"
             app:strokeWidth="1dp">
 
@@ -56,8 +56,8 @@
     <GridLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="1"
         android:layout_marginStart="16dp"
+        android:layout_weight="1"
         android:columnCount="4"
         android:rowCount="5">
 

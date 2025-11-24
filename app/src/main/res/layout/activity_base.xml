@@ -13,40 +13,41 @@
         android:layout_marginTop="32dp"
         android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="?actionBarSize"
-                android:gravity="center_vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:gravity="center_vertical">
 
-                <ImageButton
-                    android:id="@+id/menu_btn"
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:background="?selectableItemBackgroundBorderless"
-                    android:contentDescription="Menu"
-                    android:src="@drawable/ic_menu"
-                    app:tint="@color/dashboard_text_color"/>
+            <ImageButton
+                android:id="@+id/menu_btn"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:contentDescription="Menu"
+                android:src="@drawable/ic_menu"
+                app:tint="@color/dashboard_text_color" />
 
-                <TextView
-                    android:id="@+id/title_tv"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/poppins"
-                    android:gravity="center"
-                    android:text="Title"
-                    android:textSize="20sp" />
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="Title"
+                android:textSize="20sp" />
 
-                <ImageButton
-                    android:id="@+id/profile_btn"
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:background="@drawable/profile_btn_background"
-                    android:contentDescription="Profile"
-                    android:src="@drawable/ic_profile"
-                    app:tint="@color/dashboard_text_color"/>
+            <ImageButton
+                android:id="@+id/profile_btn"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/profile_btn_background"
+                android:contentDescription="Profile"
+                android:src="@drawable/ic_profile"
+                app:tint="@color/dashboard_text_color" />
 
-            </LinearLayout>
+        </LinearLayout>
+
         <FrameLayout
             android:id="@+id/contentFrame"
             android:layout_width="match_parent"
@@ -59,9 +60,8 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        app:menu="@menu/nav_menu"
         app:itemShapeFillColor="@color/nav_item_selected_tint"
-        tools:ignore="VisualLintBounds"
-        />
+        app:menu="@menu/nav_menu"
+        tools:ignore="VisualLintBounds" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

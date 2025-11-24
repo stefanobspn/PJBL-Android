@@ -11,12 +11,12 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 
-open class BaseActivity: AppCompatActivity() {
+open class BaseActivity : AppCompatActivity() {
     protected lateinit var navigationView: NavigationView
     protected lateinit var titleTextView: TextView
     private lateinit var drawer: DrawerLayout
     protected var currentNavId: Int = R.id.nav_dashboard
-    protected lateinit var profileButton : ImageButton
+    protected lateinit var profileButton: ImageButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,24 +48,28 @@ open class BaseActivity: AppCompatActivity() {
                         startActivity(intent)
                     }
                 }
+
                 R.id.nav_calculator -> {
                     if (currentNavId != R.id.nav_calculator) {
                         val intent = Intent(this, CalculatorActivity::class.java)
                         startActivity(intent)
                     }
                 }
+
                 R.id.nav_form -> {
                     if (currentNavId != R.id.nav_form) {
                         val intent = Intent(this, FormActivity::class.java)
                         startActivity(intent)
                     }
                 }
+
                 R.id.nav_cashier -> {
                     if (currentNavId != R.id.nav_cashier) {
                         val intent = Intent(this, CashierActivity::class.java)
                         startActivity(intent)
                     }
                 }
+
                 R.id.nav_temp -> {
                     if (currentNavId != R.id.nav_temp) {
                         val intent = Intent(this, TempActivity::class.java)

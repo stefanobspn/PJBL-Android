@@ -15,7 +15,7 @@ import android.widget.Toast
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class FormActivity: BaseActivity() {
+class FormActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setChildContent(R.layout.activity_form)
@@ -26,8 +26,10 @@ class FormActivity: BaseActivity() {
 
         // --- Dropdown Agama ---
         val religions = resources.getStringArray(R.array.religions)
-        val religionAdapter = ArrayAdapter(this, android.R.layout.simple_dropdown_item_1line, religions)
-        val religionAutoCompleteTextView = findViewById<AutoCompleteTextView>(R.id.religion_auto_complete)
+        val religionAdapter =
+            ArrayAdapter(this, android.R.layout.simple_dropdown_item_1line, religions)
+        val religionAutoCompleteTextView =
+            findViewById<AutoCompleteTextView>(R.id.religion_auto_complete)
         religionAutoCompleteTextView.setAdapter(religionAdapter)
 
         religionAutoCompleteTextView.setOnFocusChangeListener { view, hasFocus ->
@@ -55,11 +57,15 @@ class FormActivity: BaseActivity() {
             if (validateInput()) {
                 val name = findViewById<EditText>(R.id.name_edit_text).text.toString()
                 val age = findViewById<EditText>(R.id.age_edit_text).text.toString()
-                val genderId = findViewById<RadioGroup>(R.id.gender_radio_group).checkedRadioButtonId
-                val gender = if (genderId != -1) findViewById<RadioButton>(genderId).text.toString() else ""
+                val genderId =
+                    findViewById<RadioGroup>(R.id.gender_radio_group).checkedRadioButtonId
+                val gender =
+                    if (genderId != -1) findViewById<RadioButton>(genderId).text.toString() else ""
                 val email = findViewById<EditText>(R.id.email_edit_text).text.toString()
-                val religion = findViewById<AutoCompleteTextView>(R.id.religion_auto_complete).text.toString()
-                val hobby = findViewById<AutoCompleteTextView>(R.id.hobby_auto_complete).text.toString()
+                val religion =
+                    findViewById<AutoCompleteTextView>(R.id.religion_auto_complete).text.toString()
+                val hobby =
+                    findViewById<AutoCompleteTextView>(R.id.hobby_auto_complete).text.toString()
                 val address = findViewById<EditText>(R.id.address_edit_text).text.toString()
 
                 val intent = Intent(this, OutputFormActivity::class.java).apply {
@@ -102,7 +108,8 @@ class FormActivity: BaseActivity() {
         val age = findViewById<EditText>(R.id.age_edit_text).text.toString()
         val genderId = findViewById<RadioGroup>(R.id.gender_radio_group).checkedRadioButtonId
         val email = findViewById<EditText>(R.id.email_edit_text).text.toString()
-        val religion = findViewById<AutoCompleteTextView>(R.id.religion_auto_complete).text.toString()
+        val religion =
+            findViewById<AutoCompleteTextView>(R.id.religion_auto_complete).text.toString()
         val hobby = findViewById<AutoCompleteTextView>(R.id.hobby_auto_complete).text.toString()
         val address = findViewById<EditText>(R.id.address_edit_text).text.toString()
 
