@@ -94,6 +94,7 @@ Item 2      x1    Rp15.000" />
     <com.google.android.material.button.MaterialButton
         android:id="@+id/close_button"
         android:layout_width="match_parent"
+        android:textColor="@color/dashboard_text_color"
         android:layout_height="wrap_content"
         android:text="Tutup" />
 
