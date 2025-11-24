@@ -58,10 +58,12 @@ class ProfileActivity : BaseActivity() {
         if (isProfileCreated) {
             noProfileText.visibility = View.GONE
             profileCard.visibility = View.VISIBLE
+            profileImage.visibility = View.VISIBLE
             loadProfileData()
         } else {
             noProfileText.visibility = View.VISIBLE
             profileCard.visibility = View.GONE
+            profileImage.visibility = View.GONE
         }
     }
 
