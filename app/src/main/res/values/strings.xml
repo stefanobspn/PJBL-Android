@@ -8,6 +8,15 @@
         <item>Buddha</item>
         <item>Konghucu</item>
     </string-array>
+    <string-array name="hobbies">
+        <item>Membaca</item>
+        <item>Menulis</item>
+        <item>Olahraga</item>
+        <item>Musik</item>
+        <item>Gaming</item>
+        <item>Traveling</item>
+        <item>Ngoding</item>
+    </string-array>
     <string-array name="temperature_units">
         <item>Celcius</item>
         <item>Fahrenheit</item>
