@@ -18,7 +18,6 @@
             android:layout_height="wrap_content"
             app:cardCornerRadius="16dp"
             app:cardElevation="4dp"
-            app:cardBackgroundColor="@color/dashboard_card_color"
             app:strokeColor="#3E3E4A"
             app:strokeWidth="1dp">
 
@@ -126,17 +125,18 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/hobby_input_layout"
-                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                    android:id="@+id/hobby_menu"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:hint="Hobi">
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/hobby_edit_text"
+                    <AutoCompleteTextView
+                        android:id="@+id/hobby_auto_complete"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:inputType="none"
                         android:textColor="@color/dashboard_text_color"/>
 
                 </com.google.android.material.textfield.TextInputLayout>
