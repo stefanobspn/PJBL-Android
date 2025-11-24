@@ -17,13 +17,27 @@
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:src="@drawable/ic_profile"
-            app:civ_border_width="2dp"
-            app:civ_border_color="#FF000000"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/dashboard_text_color"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="16dp"
             android:contentDescription="Profile Picture" />
+
+        <TextView
+            android:id="@+id/no_profile_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anda belum pernah menambahkan profile"
+            android:textSize="18sp"
+            android:textColor="@color/dashboard_text_color"
+            android:visibility="gone"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/profile_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="24dp" />
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/profile_card"
@@ -35,6 +49,7 @@
             app:cardBackgroundColor="@color/dashboard_card_color"
             app:strokeColor="#3E3E4A"
             app:strokeWidth="1dp"
+            android:visibility="gone"
             app:layout_constraintTop_toBottomOf="@id/profile_image"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
@@ -166,7 +181,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:text="Edit Profile"
-            app:layout_constraintTop_toBottomOf="@id/profile_card"
+            app:layout_constraintTop_toBottomOf="@id/no_profile_text"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:padding="12dp"/>
