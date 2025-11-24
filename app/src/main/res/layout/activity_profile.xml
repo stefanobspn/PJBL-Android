@@ -47,7 +47,6 @@
             android:layout_marginTop="24dp"
             app:cardCornerRadius="16dp"
             app:cardElevation="4dp"
-            app:cardBackgroundColor="@color/dashboard_card_color"
             app:strokeColor="#3E3E4A"
             app:strokeWidth="1dp"
             android:visibility="gone"
@@ -174,6 +173,7 @@
 
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
+
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/edit_profile_button"

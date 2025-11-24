@@ -1,7 +1,7 @@
 package dev.stefano.asesmengasal
 
 import android.content.Context
-import android.content.SharedPreferences
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.view.inputmethod.InputMethodManager
@@ -53,8 +53,25 @@ class FormActivity: BaseActivity() {
         val submitButton = findViewById<Button>(R.id.submit_button)
         submitButton.setOnClickListener {
             if (validateInput()) {
-                saveProfileData()
-                finish()
+                val name = findViewById<EditText>(R.id.name_edit_text).text.toString()
+                val age = findViewById<EditText>(R.id.age_edit_text).text.toString()
+                val genderId = findViewById<RadioGroup>(R.id.gender_radio_group).checkedRadioButtonId
+                val gender = if (genderId != -1) findViewById<RadioButton>(genderId).text.toString() else ""
+                val email = findViewById<EditText>(R.id.email_edit_text).text.toString()
+                val religion = findViewById<AutoCompleteTextView>(R.id.religion_auto_complete).text.toString()
+                val hobby = findViewById<AutoCompleteTextView>(R.id.hobby_auto_complete).text.toString()
+                val address = findViewById<EditText>(R.id.address_edit_text).text.toString()
+
+                val intent = Intent(this, OutputFormActivity::class.java).apply {
+                    putExtra("name", name)
+                    putExtra("age", age)
+                    putExtra("gender", gender)
+                    putExtra("email", email)
+                    putExtra("religion", religion)
+                    putExtra("hobby", hobby)
+                    putExtra("address", address)
+                }
+                startActivity(intent)
             } else {
                 Toast.makeText(this, "Harap isi semua kolom", Toast.LENGTH_SHORT).show()
             }
@@ -96,30 +113,5 @@ class FormActivity: BaseActivity() {
                 religion.isNotEmpty() &&
                 hobby.isNotEmpty() &&
                 address.isNotEmpty()
-    }
-
-    private fun saveProfileData() {
-        val sharedPref = getSharedPreferences("ProfilePrefs", MODE_PRIVATE)
-        val editor = sharedPref.edit()
-
-        val name = findViewById<EditText>(R.id.name_edit_text).text.toString()
-        val age = findViewById<EditText>(R.id.age_edit_text).text.toString()
-        val genderId = findViewById<RadioGroup>(R.id.gender_radio_group).checkedRadioButtonId
-        val gender = if (genderId != -1) findViewById<RadioButton>(genderId).text.toString() else ""
-        val email = findViewById<EditText>(R.id.email_edit_text).text.toString()
-        val religion = findViewById<AutoCompleteTextView>(R.id.religion_auto_complete).text.toString()
-        val hobby = findViewById<AutoCompleteTextView>(R.id.hobby_auto_complete).text.toString()
-        val address = findViewById<EditText>(R.id.address_edit_text).text.toString()
-
-        editor.putString("name", name)
-        editor.putString("age", age)
-        editor.putString("gender", gender)
-        editor.putString("email", email)
-        editor.putString("religion", religion)
-        editor.putString("hobby", hobby)
-        editor.putString("address", address)
-        editor.putBoolean("isProfileCreated", true)
-
-        editor.apply()
     }
 }

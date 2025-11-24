@@ -29,6 +29,7 @@
         <activity android:name=".AddItemActivity" />
         <activity android:name=".PrintReceiptActivity" />
         <activity android:name=".TempActivity" />
+        <activity android:name=".OutputFormActivity" />
     </application>
 
 </manifest>
